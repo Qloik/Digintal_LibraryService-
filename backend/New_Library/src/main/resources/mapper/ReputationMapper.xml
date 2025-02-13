@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.new_library.mapper.ReputationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.library.new_library.entity.Reputation">
+        <id column="book_id" property="bookId" />
+        <result column="over_date" property="overDate" />
+        <result column="user_id" property="userId" />
+        <result column="violation_times" property="violationTimes" />
+        <result column="violation_type" property="violationType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        book_id, over_date, user_id, violation_times, violation_type
+    </sql>
+
+</mapper>

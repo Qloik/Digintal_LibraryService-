@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.new_library.mapper.RoomAppointmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.library.new_library.entity.RoomAppointment">
+        <id column="reserve_id" property="reserveId" />
+        <result column="reserve_date" property="reserveDate" />
+        <result column="user_id" property="userId" />
+        <result column="room_number" property="roomNumber" />
+        <result column="room_type" property="roomType" />
+        <result column="reserve_time" property="reserveTime" />
+        <result column="room_status" property="roomStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        reserve_id, reserve_date, user_id, room_number, room_type, reserve_time, room_status
+    </sql>
+
+</mapper>

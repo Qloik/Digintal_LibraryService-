@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.new_library.mapper.BookInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.library.new_library.entity.BookInfo">
+        <id column="isbn" property="isbn" />
+        <result column="book_name" property="bookName" />
+        <result column="book_author" property="bookAuthor" />
+        <result column="book_translation" property="bookTranslation" />
+        <result column="book_repre" property="bookRepre" />
+        <result column="book_publisher" property="bookPublisher" />
+        <result column="book_text" property="bookText" />
+        <result column="book_authorabout" property="bookAuthorabout" />
+        <result column="book_img" property="bookImg" />
+        <result column="author_img" property="authorImg" />
+        <result column="score_people_number" property="scorePeopleNumber" />
+        <result column="score" property="score" />
+        <result column="update_time" property="updateTime" />
+        <result column="reserve" property="reserve" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        isbn, book_name, book_author, book_translation, book_repre, book_publisher, book_text, book_authorabout, book_img, author_img, score_people_number, score, update_time
+    </sql>
+
+</mapper>

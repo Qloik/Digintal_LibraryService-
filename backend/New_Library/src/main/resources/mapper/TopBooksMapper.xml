@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.new_library.mapper.TopBooksMapper">
+
+    <!-- 通用查询映射结果 -->
+    <!-- id:方法名  type:方法返回值类型 -->
+    <resultMap id="BaseResultMap" type="com.library.new_library.entity.TopBooks" autoMapping="true">
+    	<!-- id(标签):表的主键  property:类的属性  column:表的字段-->
+        <id column="isbn" property="isbn" />
+        <result column="book_name" property="bookName" />
+        <result column="borrowed_times" property="borrowedTimes" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        isbn, book_name, borrowed_times
+    </sql>
+
+</mapper>

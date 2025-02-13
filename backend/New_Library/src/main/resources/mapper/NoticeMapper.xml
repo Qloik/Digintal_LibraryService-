@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.new_library.mapper.NoticeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.library.new_library.entity.Notice">
+        <id column="notice_id" property="noticeId" />
+        <result column="user_id" property="userId" />
+        <result column="title" property="title" />
+        <result column="text" property="text" />
+        <result column="release_date" property="releaseDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        notice_id, user_id, title, text, release_date
+    </sql>
+
+</mapper>
